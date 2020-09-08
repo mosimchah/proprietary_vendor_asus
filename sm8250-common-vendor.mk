@@ -125,6 +125,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libantradio \
     aptxals \
+    AsusVisualMaster \
     com.qualcomm.location \
     DeviceInfo \
     DeviceStatisticsService \
