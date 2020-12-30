@@ -170,14 +170,6 @@ android_app_import {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.atrace@1.0-service",
-	owner: "asus",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.atrace@1.0-service.xml",
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "android.hardware.gnss@2.0-service-qti",
 	owner: "asus",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml",

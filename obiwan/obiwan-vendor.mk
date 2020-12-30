@@ -1097,6 +1097,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/obiwan/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     vendor/asus/obiwan/proprietary/vendor/etc/usb_host_switch.sh:$(TARGET_COPY_OUT_VENDOR)/etc/usb_host_switch.sh \
     vendor/asus/obiwan/proprietary/vendor/etc/usb_pd_rt1715.sh:$(TARGET_COPY_OUT_VENDOR)/etc/usb_pd_rt1715.sh \
+    vendor/asus/obiwan/proprietary/vendor/etc/vintf/manifest/android.hardware.atrace@1.0-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.atrace@1.0-service.xml \
     vendor/asus/obiwan/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
     vendor/asus/obiwan/proprietary/vendor/etc/wfdconfig_720.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig_720.xml \
     vendor/asus/obiwan/proprietary/vendor/etc/wfdconfig_MI.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig_MI.xml \
@@ -2975,7 +2976,6 @@ PRODUCT_PACKAGES += \
     com.asus.gpudrivers.sm8250.api29 \
     com.qualcomm.qti.gpudrivers.sm8250.api29 \
     ifaa_service \
-    android.hardware.atrace@1.0-service \
     android.hardware.gnss@2.0-service-qti \
     android.hardware.graphics.mapper-impl-qti-display \
     android.hardware.usb@1.1-service \
