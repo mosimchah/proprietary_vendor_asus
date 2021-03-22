@@ -328,6 +328,14 @@ service vendor.ins_key /vendor/bin/install_key_server
     group root
     seclabel u:r:install_key_server:s0
     disabled
+    
+service vendor.ins_WDKey /vendor/bin/sh /vendor/bin/ReInsWDKey
+    class core
+    user root
+    group root
+    seclabel u:r:install_key_server:s0
+    disabled
+    oneshot
 
 service vendor.widevine /vendor/bin/sh /vendor/bin/widevine.sh
     class late_start
@@ -534,6 +542,11 @@ on property:vendor.atd.start.key.install=1
 
 on property:vendor.debug.check.keybox=1
     start vendor.widevine
+    
+on property:vendor.drm.keystatus=-1
+    chmod 0644 /ADF/NOWDKY
+    chmod 0644 /ADF/WDKEY
+    start vendor.ins_WDKey 
 #ASUS_BSP: add for key validation ---
 
 # ASUS_BSP : Update Phone Aura FW +++
